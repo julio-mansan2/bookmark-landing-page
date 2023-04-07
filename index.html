@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bookmark Landing Page - Frontend Mentor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-menu">
+            <img src="./src/images/logo-bookmark.svg" alt="Logo Bookmark">
+            <nav>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+    
+                <ul class="menu__box">
+                    <hr>
+                    <li><a href="/">Features</a></li>
+                    <hr>
+                    <li><a href="/">Pricing</a></li>
+                    <hr>
+                    <li><a href="/">Contact</a></li>
+                    <hr>
+                    <li><a href="/" class="login">Login</a></li>
+                    <div class="social-medias social-medias-mobile">
+                        <a href="/">
+                            <i class="fab fa-fw fa-facebook-square"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <article>
+                <h1>A simple bookmark manager</h1>
+                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div>
+                    <a href="/">Get it on Chrome</a>
+                    <a href="/">Get it on Firefox</a>
+                </div>
+            </article>
+            <img src="./src/images/illustration-hero.svg" alt="">
+        </section>
+    </header>
+    <main class="main">
+        <section class="features">
+            <div>
+                <h2>Features</h2>
+                <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            </div>
+            <article class="selection">
+                <hr>
+                <div>
+                    <label class="simple-label" for="simple-bookmarking">Simple Bookmarking</label>
+                    <input type="radio" name="option[365]" checked id="simple-bookmarking">
+                </div>
+                <hr>
+                <div>
+                    <label class="speedy-label" for="speedy-searching">Speedy Searching</label>
+                    <input type="radio" name="option[365]" id="speedy-searching">
+                </div>
+                <hr>
+                <div>
+                    <label class="easy-label" for="easy-sharing">Easy Sharing</label>
+                    <input type="radio" name="option[365]" id="easy-sharing">
+                </div>
+                <hr>
+            </article>
+            <hr>
+            <section>
+                <article class="selecionado feature simple-bookmarking">
+                    <img src="./src/images/illustration-features-tab-1.svg" aria-hidden="true">
+                    <div>
+                        <h3>Bookmark in one click</h3>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                        <a href="/">More info</a>
+                    </div>
+                </article>
+                <article class="speedy-searching feature">
+                    <img src="./src/images/illustration-features-tab-2.svg" aria-hidden="true">
+                    <div>
+                        <h3>Intelligent search</h3>
+                        <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                        <a href="/">More info</a>
+                    </div>
+                </article>
+                <article class="easy-sharing feature">
+                    <img src="./src/images/illustration-features-tab-3.svg" aria-hidden="true">
+                    <div>
+                        <h3>Share your bookmarks</h3>
+                        <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                        <a href="/">More info</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="download">
+            <div>
+                <h2>Download the extension</h2>
+                <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+            </div>
+            <section class="browser">
+                <article>
+                    <img src="./src/images/logo-chrome.svg" alt="Logo Chrome">
+                    <h3>Add to Chrome</h3>
+                    <span>Minimum version 6.2</span>
+                    <a href="/">Add & install extension</a>
+                </article>
+                <article class="firefox">
+                    <img src="./src/images/logo-firefox.svg" alt="Logo Firefox">
+                    <h3>Add to Firefox</h3>
+                    <span>Minimum version 5.5</span>
+                    <a href="/">Add & install extension</a>
+                </article>
+                <article class="opera">
+                    <img src="./src/images/logo-opera.svg" alt="Logo Opera">
+                    <h3>Add to Opera</h3>
+                    <span>Minimum version 4.6</span>
+                    <a href="/">Add & install extension</a>
+                </article>
+            </section>
+        </section>
+        <section class="questions">
+            <div>                
+                <h2>Frequently Asked Questions</h2>
+                <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+            </div>
+            <section class="faq">
+                <hr>
+                <button class="acordeon">What is Bookmark?</button>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                </div>
+                <hr>
+                <button class="acordeon">How can I request a new browser?</button>
+                <div class="info">
+                    <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                </div>
+                <hr>
+                <button class="acordeon">Is there a mobile app?</button>
+                <div class="info">
+                    <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                </div>
+                <hr>
+                <button class="acordeon">What about other Chromium browsers?</button>
+                <div class="info">
+                    <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                </div>
+                <hr>
+            </section>
+            <a href="/">More info</a>
+        </section>
+        <section class="cta">
+            <span>35,000+ &nbsp a l r e a d y &nbsp j o i n e d</span>
+            <h1>Stay up-to-date with what <br> we’re doing</h1>
+            <form>
+                <div>
+                    <input type="email" class="email" required name="email" placeholder="Enter your email address" id="email">
+                    <img class="icon-error" src="./src/images/icon-error.svg" alt="icon-error">
+                    <input type="submit" class="submit" value="Contact Us" id="submit">
+                </div>
+                <span class="message-error">Whoops, make sure it's an email</span>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+            <img src="./src/images/logo-bookmark.svg" alt="Logo Bookmark">
+            <ul class="footer-menu">
+                <li><a href="/">Features</a></li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        <div class="social-medias">
+            <a href="/">
+                <i class="fab fa-fw fa-facebook-square"></i>
+            </a>
+            <a href="/">
+                <i class="fab fa-fw fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
